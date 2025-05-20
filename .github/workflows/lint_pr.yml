@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 0  # To get all history for git diff commands
           
-      - name: Get changed Python files
+      - name: Get changed Python-files
         id: changed-files
         run: |
           if [ "${{ github.event_name }}" == "pull_request" ]; then
